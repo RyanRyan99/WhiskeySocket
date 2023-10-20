@@ -1,0 +1,18 @@
+Installation
+Download or clone this repo. If you want to skip the build step, you can download the prebuilt one (file with the baileys-api-VERSION.tgz name pattern) from the release page
+Enter to the project directory
+Install the dependencies
+"npm install"
+Build the project using the build script
+"npm run build"
+You can skip this part if you're using the prebuilt one from the release page
+
+Setup
+Copy the .env.example file and rename it into .env, then update your connection url in the DATABASE_URL field
+Update your provider in the prisma/schema.prisma file if you're using database other than MySQL
+Run your migration
+"npx prisma migrate (dev|deploy)"
+or push the schema
+
+"npx prisma db push"
+Don't forget to always re-run those whenever there's a change on the prisma/schema.prisma file
