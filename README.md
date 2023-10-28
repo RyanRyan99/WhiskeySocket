@@ -20,3 +20,5 @@ npm run build
 ```
 npm run start
 ```
+
+> Bisa Juga RUN Tipe File JS dengan membuka folder dist di CMD
